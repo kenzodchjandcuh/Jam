@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand_name">kenzo</div>
+                <div class="brand_tag">Analog Clock</div>
+            </div>
+            <div class="readout" aria-label="digital time and date">
+                <div class="readout_time" id="digital-time">--:--:--</div>
+                <div class="readout_date" id="digital-date">----</div>
+            </div>
+            <div class="controls">
+                <div class="theme-switch" aria-label="Color theme">
+                    <button class="theme-btn" data-theme="ocean" type="button">Ocean</button>
+                    <button class="theme-btn" data-theme="sunset" type="button">Sunset</button>
+                    <button class="theme-btn" data-theme="forest" type="button">Forest</button>
+                </div>
+                <div class="timezone-switch" aria-label="Timezone selection">
+                    <label for="timezone-select" class="sr-only">Select timezone</label>
+                    <select id="timezone-select" class="tz-select" aria-label="Timezone selection">
+                        <option value="Asia/Jakarta">WIB (Jakarta)</option>
+                        <option value="Asia/Makassar">WITA (Makassar)</option>
+                        <option value="Asia/Jayapura">WIT (Jayapura)</option>
+                        <option value="Europe/London">London</option>
+                        <option value="America/New_York">New York</option>
+                        <option value="Asia/Tokyo">Tokyo</option>
+                        <option value="UTC">UTC</option>
+                    </select>
+                </div>
+                <div class="mode-switch" role="button" tabindex="0">Dark Mode</div>
+            </div>
+        </header>
+        <div class="clock">
+            <label style="--i: 1"><span>1</span></label>
+            <label style="--i: 2"><span>2</span></label>
+            <label style="--i: 3"><span>3</span></label>
+            <label style="--i: 4"><span>4</span></label>
+            <label style="--i: 5"><span>5</span></label>
+            <label style="--i: 6"><span>6</span></label>
+            <label style="--i: 7"><span>7</span></label>
+            <label style="--i: 8"><span>8</span></label>
+            <label style="--i: 9"><span>9</span></label>
+            <label style="--i: 10"><span>10</span></label>
+            <label style="--i: 11"><span>11</span></label>
+            <label style="--i: 12"><span>12</span></label>
+            <div class="indicator">
+                <span class="hand hour"></span>
+                <span class="hand minute"></span>
+                <span class="hand second"></span>
+            </div>
+        </div>
+            <footer class="site-footer" role="contentinfo">
+                <div class="site-footer__inner">
+                    <p>Dibuat oleh Muhammad Dani Sahputra. Hak cipta dilindungi © 2026.</p>
+                    <p>Terima kasih telah menggunakan jam ini.</p>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
